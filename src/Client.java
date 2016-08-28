@@ -82,8 +82,6 @@ public class Client {
 					client.close();
 					System.out.println("Client shut down");
 				}
-					
-				
 			}
 		}
 		
