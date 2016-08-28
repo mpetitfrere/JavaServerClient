@@ -15,7 +15,7 @@ public class Server {
 	public static void main(String args[]) throws IOException, ClassNotFoundException, EOFException {
 		
 		// creating the server
-		ServerSocket server=new ServerSocket(12345, 100);
+		ServerSocket server=new ServerSocket(12346, 100);
 		System.out.println("Server is listening at port 12345...");
 		Socket connection=server.accept();
 		
@@ -43,7 +43,9 @@ public class Server {
 		             System.out.println("Server shut down");
 		             break;
 				}
-									
+				
+				
+					
 			 a  = input.readDouble();
 			 b  = input.readDouble();
 			 c  = input.readDouble();
@@ -68,12 +70,9 @@ public class Server {
 		            output.flush();
 			}// end of else if
 			
-	        	
 		}//end of while loop
 				input.close();
-				
 				output.close();
-
 				connection.close();
 	}
 	
